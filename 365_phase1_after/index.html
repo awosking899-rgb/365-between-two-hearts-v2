@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#1b1236">
+<title>365 — بين قلبين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="gl"></canvas>
+  <div id="look"></div>
+
+  <!-- HUD -->
+  <div id="hud" class="hidden">
+    <button id="btnPause" class="round" aria-label="إيقاف مؤقت">
+      <svg viewBox="0 0 24 24" width="22" height="22"><rect x="6" y="5" width="4" height="14" rx="1.5" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1.5" fill="currentColor"/></svg>
+    </button>
+    <div id="regionToast"></div>
+    <div id="actHud" class="hidden"><div id="actTitle"></div><div id="actInfo"></div>
+      <div id="actBar"><i id="actFill"></i></div>
+      <div id="actTilt"><i id="actTiltDot"></i></div>
+      <button id="actExit" aria-label="إنهاء النشاط">✕</button></div>
+    <div id="actSay"></div>
+    <button id="btnExplore" class="explore hidden"><span id="exploreLabel">استكشاف</span></button>
+    <div id="joy" class="touchonly"><div id="joyKnob"></div></div>
+    <button id="btnRun" class="round run touchonly" aria-label="جري">
+      <svg viewBox="0 0 24 24" width="26" height="26"><path d="M13 4a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 21l2.2-6L6 12.5l3.3-4.2 3.2 2 2.3-.8M15 21l-1.8-5.5-3-2.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <!-- start -->
+  <div id="start" class="screen">
+    <div class="start-inner">
+      <div class="title-num">365</div>
+      <div class="title-sub">— بين قلبين —</div>
+      <div id="startStatus" class="status">جارٍ تجهيز العالم…</div>
+      <div id="loadBar"><i id="loadFill"></i></div>
+      <button id="btnStart" class="big" disabled>ابدئي الرحلة</button>
+      <button id="btnContinue" class="ghost hidden">استكمال الرحلة</button>
+      <button id="btnNew" class="link hidden">بدء رحلة جديدة</button>
+      <div class="hint">سماعات + هدوء = تجربة أجمل 🎧</div>
+    </div>
+  </div>
+
+  <!-- fade -->
+  <div id="fade"></div>
+
+  <!-- pause -->
+  <div id="pause" class="screen hidden">
+    <div class="panel">
+      <h2>365 — بين قلبين</h2>
+      <button id="pResume" class="big">استكمال الرحلة</button>
+      <button id="pMemories" class="ghost">الذكريات التي استكشفتها</button>
+      <button id="pSettings" class="ghost">إعدادات</button>
+      <button id="pStartOver" class="ghost">العودة إلى البداية</button>
+      <button id="pRestart" class="ghost danger">إعادة الرحلة</button>
+    </div>
+  </div>
+
+  <!-- settings -->
+  <div id="settings" class="screen hidden">
+    <div class="panel">
+      <h2>إعدادات</h2>
+      <label class="row"><span>مستوى الموسيقى</span><input id="sMusic" type="range" min="0" max="100"></label>
+      <label class="row"><span>مستوى صوت الذكريات</span><input id="sVoice" type="range" min="0" max="100"></label>
+      <label class="row"><span>مستوى المؤثرات</span><input id="sSfx" type="range" min="0" max="100"></label>
+      <label class="row check"><span>إيقاف الموسيقى</span><input id="sMusicOff" type="checkbox"></label>
+      <label class="row check"><span>إيقاف المؤثرات</span><input id="sSfxOff" type="checkbox"></label>
+      <label class="row check desktop-only"><span>قفل مؤشر الماوس أثناء اللعب</span><input id="sLock" type="checkbox"></label>
+      <label class="row"><span>جودة الرسوم</span>
+        <select id="sQuality"><option value="auto">تلقائي</option><option value="low">خفيفة</option><option value="high">عالية</option></select></label>
+      <div id="saveNote" class="note"></div>
+      <button id="sBack" class="big">رجوع</button>
+    </div>
+  </div>
+
+  <!-- memories list -->
+  <div id="memlist" class="screen hidden">
+    <div class="panel wide">
+      <h2>الذكريات التي استكشفتها</h2>
+      <div id="memGrid"></div>
+      <button id="mlBack" class="big">رجوع</button>
+    </div>
+  </div>
+
+  <!-- confirm -->
+  <div id="confirm" class="screen hidden">
+    <div class="panel small">
+      <p id="confirmText"></p>
+      <div class="two">
+        <button id="cYes" class="big danger">نعم</button>
+        <button id="cNo" class="ghost">إلغاء</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- memory viewer -->
+  <div id="viewer" class="hidden">
+    <div id="vBackdrop"></div>
+    <div id="vStage"></div>
+    <button id="vClose" class="round close" aria-label="إغلاق">✕</button>
+  </div>
+
+  <!-- error -->
+  <div id="error" class="screen hidden"><div class="panel"><h2>تعذّر التشغيل</h2><p id="errText"></p><button class="big" onclick="location.reload()">إعادة المحاولة</button></div></div>
+</div>
+<script src="js/boot.js"></script>
+</body>
+</html>

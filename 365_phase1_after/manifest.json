@@ -1,0 +1,182 @@
+{
+ "photos": [
+  {
+   "file": "assets/photos/photos_01.jpg",
+   "orig": "IMG-20260805-WA0014.jpg",
+   "w": 738,
+   "h": 1214
+  },
+  {
+   "file": "assets/photos/photos_02.jpg",
+   "orig": "IMG_20260531_150614_346.jpg",
+   "w": 674,
+   "h": 1200
+  },
+  {
+   "file": "assets/photos/photos_03.jpg",
+   "orig": "IMG_20260531_150743_781.jpg",
+   "w": 941,
+   "h": 1232
+  },
+  {
+   "file": "assets/photos/photos_04.jpg",
+   "orig": "IMG_20260531_150746_706.jpg",
+   "w": 1080,
+   "h": 1440
+  },
+  {
+   "file": "assets/photos/photos_05.jpg",
+   "orig": "IMG_20260621_211659_060.jpg",
+   "w": 1600,
+   "h": 900
+  },
+  {
+   "file": "assets/photos/photos_06.jpg",
+   "orig": "IMG_20260815_015954_263.jpg",
+   "w": 950,
+   "h": 1330
+  },
+  {
+   "file": "assets/photos/photos_07.jpg",
+   "orig": "IMG_20261023_195340_286.jpg",
+   "w": 540,
+   "h": 960
+  },
+  {
+   "file": "assets/photos/photos_08.jpg",
+   "orig": "IMG_20261106_123018_689.jpg",
+   "w": 900,
+   "h": 1600
+  },
+  {
+   "file": "assets/photos/photos_09.jpg",
+   "orig": "IMG_20261116_203029_498.jpg",
+   "w": 960,
+   "h": 720
+  },
+  {
+   "file": "assets/photos/photos_10.jpg",
+   "orig": "IMG_20261119_164801_313_3.jpg",
+   "w": 900,
+   "h": 1600
+  },
+  {
+   "file": "assets/photos/photos_11.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٠٨_١٨٤٢٥٢_Gallery.jpg",
+   "w": 1080,
+   "h": 1469
+  },
+  {
+   "file": "assets/photos/photos_12.jpg",
+   "orig": "Screenshot_٢٠٢٦١١١٦_١٩٤٢٢٧_Gallery.jpg",
+   "w": 1080,
+   "h": 625
+  },
+  {
+   "file": "assets/photos/photos_13.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢٠٣٠٠٣_Instagram.jpg",
+   "w": 1080,
+   "h": 618
+  },
+  {
+   "file": "assets/photos/photos_14.jpg",
+   "orig": "file_000000003838720aa5059e9fbc769388.png",
+   "w": 655,
+   "h": 404
+  },
+  {
+   "file": "assets/photos/photos_15.jpg",
+   "orig": "file_00000000c4ac72468ba1909707a09b17.png",
+   "w": 1254,
+   "h": 1254
+  }
+ ],
+ "birthday": [
+  {
+   "file": "assets/birthday/birthday_01.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٣٠٠_Instagram.jpg",
+   "w": 770,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_02.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٣١٢_Instagram.jpg",
+   "w": 799,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_03.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٣٢٢_Instagram.jpg",
+   "w": 788,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_04.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٣٣٥_Instagram.jpg",
+   "w": 786,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_05.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٣٤٧_Instagram.jpg",
+   "w": 806,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_06.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٣٥٦_Instagram.jpg",
+   "w": 788,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_07.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٤٠٧_Instagram.jpg",
+   "w": 788,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_08.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٤٢٢_Instagram.jpg",
+   "w": 787,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_09.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٤٣٣_Instagram.jpg",
+   "w": 787,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_10.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٤٤٨_Instagram.jpg",
+   "w": 784,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_11.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٥٠٠_Instagram.jpg",
+   "w": 792,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_12.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٥١٠_Instagram.jpg",
+   "w": 788,
+   "h": 1400
+  },
+  {
+   "file": "assets/birthday/birthday_13.jpg",
+   "orig": "Screenshot_٢٠٢٦١١٢١_٢١٠٥٢٥_Instagram.jpg",
+   "w": 804,
+   "h": 1400
+  }
+ ],
+ "memories": [
+  {
+   "file": "assets/memories/memories_01.jpg",
+   "orig": "IMG_20261121_204431_264.jpg",
+   "w": 622,
+   "h": 1170
+  }
+ ]
+}
